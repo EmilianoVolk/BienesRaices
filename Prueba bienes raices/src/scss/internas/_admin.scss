@@ -1,0 +1,58 @@
+
+.alerta{
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-align: center;
+
+    &.error{
+        background-color: $rojo;
+    }
+
+    &.exito{
+        background-color: $verde;
+
+    }
+}
+
+table.tables{
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0 10px;
+    thead{
+        background-color: $verde;
+        
+        th {
+            color: $blanco;
+            padding: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    .imagen-tabla{
+        width: 30rem;
+        margin: 0 auto;
+    }
+}
+
+.small-image{
+    width: 20rem;
+    margin-bottom: 1.75rem;
+}
+
+.propiedades-info{
+    td{
+        text-align: center;
+        font-size: 2.4rem;
+    }
+}
+
+.botones-admin{
+    display: flex;
+    justify-content: space-between;
+}

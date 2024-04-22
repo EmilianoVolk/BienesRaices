@@ -1,0 +1,24 @@
+.nosotros-contenedor{
+    @include tablet {        
+        @include grid(2,2rem);
+    }
+    .nosotros-texto{
+        h2{
+            margin: 0;
+            font-weight: 400;
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    /* Asegura que el contenido principal se expanda para ocupar el espacio restante */
+}

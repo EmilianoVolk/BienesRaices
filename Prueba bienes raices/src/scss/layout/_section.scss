@@ -1,0 +1,60 @@
+.contenedor-seccion{
+    @include desktop {        
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.entrada-blog{
+    padding: 1.5rem;
+    background-color: lighten($color: $gris, $amount: 10);
+    border: 1px solid $gris;
+    margin-bottom: 3rem;
+
+    @include desktop {        
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+.texto-entrada{
+    @include maxdesktop {
+        h4,p{
+           text-align: center; 
+        }
+        h4{
+            display: block;
+            margin-top: 2rem;
+            &::after{
+                content: '';
+                display: block;
+                max-width: 35rem;
+                height: .5rem;
+                margin: 1rem auto;
+                background-color: $verde;
+            }
+        }
+    }
+
+    @include desktop {
+        h4 {
+            margin: 0;
+            line-height: 1.4;
+            &::after{
+                content: '';
+                display: block;
+                width: 15rem;
+                height: .5rem;
+                background-color: $verde;
+            }
+        }
+    }
+    span{
+        color: $amarillo;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
